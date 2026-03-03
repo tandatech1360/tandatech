@@ -15,7 +15,7 @@ export default function Home() {
 
         <div className="flex gap-4">
           <a
-            href="https://wa.me/2783XXXXXXX"
+            href="https://wa.me/27826490965"
             className="bg-green-500 px-6 py-3 rounded-xl font-semibold hover:bg-green-600"
           >
             WhatsApp Now
@@ -76,7 +76,7 @@ export default function Home() {
         </h2>
 
         <a
-          href="https://wa.me/2783XXXXXXX"
+          href="https://wa.me/27826490965"
           className="bg-green-500 px-8 py-4 rounded-2xl text-lg font-semibold hover:bg-green-600"
         >
           Chat on WhatsApp
