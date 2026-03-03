@@ -4,10 +4,12 @@ import { motion } from "framer-motion"
 import Background3D from "./components/Background3D"
 import Image from "next/image"
 import { Phone, MessageCircle, Instagram, Facebook, Mail, MapPin } from "lucide-react"
+import Navbar from "./components/Navbar"
 
 export default function Home() {
   return (
     <main className="bg-[#0a0f1c] text-white relative overflow-hidden">
+      <Navbar />
 
       <Background3D />
 
@@ -53,7 +55,14 @@ export default function Home() {
       </section>
 
       {/* SERVICES */}
-      <section className="py-20 px-6 max-w-6xl mx-auto">
+      <motion.section
+  id="services"
+  initial={{ opacity: 0, y: 50 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8 }}
+  viewport={{ once: true }}
+  className="py-20 px-6 max-w-6xl mx-auto"
+>
         <h2 className="text-3xl font-bold text-center mb-12">Our Services</h2>
 
         <div className="grid md:grid-cols-3 gap-8">
@@ -74,15 +83,22 @@ export default function Home() {
             </motion.div>
           ))}
         </div>
-      </section>
+      </motion.section>
       {/* WORK SHOWCASE */}
-<section className="py-20 px-6 max-w-6xl mx-auto">
+<motion.section
+id="work"
+  initial={{ opacity: 0, y: 50 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8 }}
+  viewport={{ once: true }}
+  className="py-20 px-6 max-w-6xl mx-auto"
+>
   <h2 className="text-3xl font-bold text-center mb-12">
     Recent Installations
   </h2>
 
   <div className="grid md:grid-cols-3 gap-6">
-    {[1,2,3,4,5,6,7,8,9,10].map((num) => (
+    {[1,2,3,4,5,6,7,8,9].map((num) => (
       <motion.div
         key={num}
         whileHover={{ scale: 1.05 }}
@@ -98,10 +114,17 @@ export default function Home() {
       </motion.div>
     ))}
   </div>
-</section>
+</motion.section>
 
       {/* CONTACT */}
-      <section className="py-20 px-6 bg-[#111827] text-center">
+      <motion.section
+      id="contact"
+  initial={{ opacity: 0, y: 50 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8 }}
+  viewport={{ once: true }}
+  className="py-20 px-6 max-w-6xl mx-auto"
+>
         <h2 className="text-3xl font-bold mb-6">Contact TandaTech</h2>
 
         <div className="space-y-4">
@@ -127,7 +150,7 @@ export default function Home() {
             <Facebook />
           </a>
         </div>
-      </section>
+      </motion.section>
 
     </main>
   )
