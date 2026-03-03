@@ -54,6 +54,40 @@ export default function Home() {
           ))}
         </div>
       </section>
+      {/* SUPPORT PACKAGES */}
+<section className="py-20 px-6 text-center">
+  <h2 className="text-3xl font-bold mb-10">
+    Monthly IT Support Packages
+  </h2>
+
+  <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+    
+    <div className="bg-gray-900 p-8 rounded-2xl border border-gray-800">
+      <h3 className="text-xl font-semibold mb-4">Starter</h3>
+      <p className="text-3xl font-bold mb-4">R1,500 / month</p>
+      <p className="text-gray-400">
+        Remote support, basic troubleshooting, small office network monitoring.
+      </p>
+    </div>
+
+    <div className="bg-gray-900 p-8 rounded-2xl border-2 border-green-500">
+      <h3 className="text-xl font-semibold mb-4">Business</h3>
+      <p className="text-3xl font-bold mb-4">R3,000 / month</p>
+      <p className="text-gray-400">
+        On-site support, network management, priority response, CCTV & WiFi support.
+      </p>
+    </div>
+
+    <div className="bg-gray-900 p-8 rounded-2xl border border-gray-800">
+      <h3 className="text-xl font-semibold mb-4">Premium</h3>
+      <p className="text-3xl font-bold mb-4">Custom</p>
+      <p className="text-gray-400">
+        Full IT management, infrastructure upgrades, advanced security & backup.
+      </p>
+    </div>
+
+  </div>
+</section>
 
       {/* WHY CHOOSE US */}
       <section className="py-20 px-6 text-center">
