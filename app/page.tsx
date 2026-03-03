@@ -75,6 +75,30 @@ export default function Home() {
           ))}
         </div>
       </section>
+      {/* WORK SHOWCASE */}
+<section className="py-20 px-6 max-w-6xl mx-auto">
+  <h2 className="text-3xl font-bold text-center mb-12">
+    Recent Installations
+  </h2>
+
+  <div className="grid md:grid-cols-3 gap-6">
+    {[1,2,3,4,5,6,7,8,9,10].map((num) => (
+      <motion.div
+        key={num}
+        whileHover={{ scale: 1.05 }}
+        className="overflow-hidden rounded-2xl"
+      >
+        <Image
+          src={`/work/work${num}.jpeg`}
+          alt="TandaTech Installation"
+          width={500}
+          height={400}
+          className="rounded-2xl object-cover"
+        />
+      </motion.div>
+    ))}
+  </div>
+</section>
 
       {/* CONTACT */}
       <section className="py-20 px-6 bg-[#111827] text-center">
