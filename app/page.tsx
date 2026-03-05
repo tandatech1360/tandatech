@@ -67,7 +67,7 @@ export default function Home() {
           transition={{ delay: 0.5, duration: 1 }}
           className="mt-8 max-w-2xl text-gray-300 text-lg"
         >
-          Custom solutions for homes and small businesses. Clean installs. Fast support. Real expertise.
+          Expert IT support, networking, and digital solutions tailored for modern homes and businesses.
         </motion.p>
 
         <div className="mt-12 flex gap-6 flex-wrap justify-center">
